@@ -47,7 +47,10 @@ class ui{
         },3000)
     }
     clearAlert(){
-        this.notify.innerHTML='';
+        const currentAlert= document.querySelector('.invaild');
+        if(currentAlert){
+            currentAlert.remove();
+        }
     }
     
 }
