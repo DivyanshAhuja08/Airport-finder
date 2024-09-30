@@ -132,7 +132,7 @@ th, td {
 
 @media (max-width: 768px) {
     .login-signin {
-        display: none; /* Hides the Login and Sign Up buttons */
+        display: none; 
     }
 
     .nav-bar {
