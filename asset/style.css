@@ -1,49 +1,56 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
 
+body {
+    font-family: Arial, sans-serif;
 }
-.nav-bar{
+
+.nav-bar {
     display: flex;
-    margin: 5px;
     justify-content: space-around;
     align-items: center;
     height: 3rem;
-}
-.nav-bar h3{
-    display: inline;
     margin: 5px;
 }
-.nav-bar span{
+
+.nav-bar h3 {
+    margin: 5px;
+}
+
+.nav-bar span {
     color: red;
 }
-.login-signin button{
+
+.login-signin button {
     margin: 5px;
     height: 50px;
     width: 80px;
-    align-content: center;
-    background-color:#B7E0FF;
+    background-color: #B7E0FF;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
 }
-.Airport-searcher{
- height: 500px;
- width: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
- background-image: url(./pexels-marina-hinic-199169-730778\ \(1\).jpg);
- background-position: bottom center;
- background-repeat: no-repeat;
+
+.Airport-searcher {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./pexels-marina-hinic-199169-730778\ \(1\).jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
 }
-.searcher h1{
+
+.searcher h1 {
     color: #FFF5CD;
     font-size: 3rem;
 }
-.searcher input{
+
+.searcher input {
     width: 300px;
     height: 2rem;
     background-color: #FFF5CD;
@@ -52,69 +59,142 @@ body{
     outline: none;
     padding: 3px;
 }
-.searcher i{
-    color:black;
-    background: none;
+
+.searcher i {
+    color: black;
     height: 2rem;
-    align-content: center;
     font-size: 1.5rem;
     padding: 3px;
 }
-.serach-val{
+
+.serach-val {
     display: flex;
     background-color: #FFF5CD;
-    
 }
+
 .loader {
-    font-size: 2rem; 
-    display: none; 
-    animation: spin 1s infinite linear; 
-    
+    font-size: 2rem;
+    display: none;
+    animation: spin 1s infinite linear;
 }
+
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
-.table{
+
+.table {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 table {
     border-collapse: collapse;
-    
-    
 }
 
 th, td {
-    border-bottom: 2px solid gray; 
-    padding: 5px 20px; /* Space inside the cells */
-    align-content: center;
+    border-bottom: 2px solid gray;
+    padding: 5px 20px;
+    text-align: left;
 }
-#notification{
+
+#notification {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px;
 }
- 
-.message{
+
+.message {
     height: 50px;
     width: 60%;
-    
-   
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    
 }
-.valid{
+
+.valid {
     background-color: #B7E0FF;
     color: #2a82c5;
 }
-.invalid{
- background-color: #FF7F7F;
- color: #8B0000;
+
+.invalid {
+    background-color: #FF7F7F;
+    color: #8B0000;
+}
+
+@media (max-width: 768px) {
+    .login-signin {
+        display: none; /* Hides the Login and Sign Up buttons */
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .nav-bar h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .Airport-searcher {
+        height: auto;
+        padding: 20px;
+        margin-top: 20px; 
+    }
+
+    .searcher h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .searcher input {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .table {
+        margin-top: 20px;
+        width: 100%;
+        overflow-x: auto; 
+        display: block; 
+    }
+
+    table {
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+
+    th, td {
+        padding: 10px; 
+        text-align: left;
+        overflow-wrap: break-word; 
+        white-space: normal; 
+        min-width: 80px; 
+        max-width: 150px; 
+        word-wrap: break-word; 
+    }
+
+    th {
+        font-weight: bold; 
+        background-color: #f2f2f2; 
+    }
+
+    td {
+        font-size: 0.9rem; 
+    }
+
+    #notification {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
