@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRPORT FINDER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./asset/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-bar">
+               <div class="heading">
+                <h3>A-Finder</h3>
+                <span>Serach at the speed of light with us</span>
+            </div>
+                <div class="login-signin">
+                <button>Login</button>
+                <button>Sign-in</button>
+            </div>
+
+            </div>
+        </nav>
+        <section class="search">
+            <div class="Airport-searcher">
+               <div class="searcher">
+                <h1>Search Nearby</h1>
+                <h1>Airport</h1>
+
+                <div class="serach-val">
+                    <i class="fas fa-search" ></i>
+                    <input type="text" id="search">
+                    <i class="fas fa-spinner loader" id="loader"></i>
+                </div>
+               </div>
+            </div>
+        </section>
+        <div id="notification">
+            
+        </div>
+        <section class="information">
+            <div class="table">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Airport Code</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>State/Province</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody id="displayrow">
+                        <tr>
+                            <td>John Doe</td> 
+                            <td>XYZ</td>
+                            <td>International</td> 
+                            <td>Sample City</td> 
+                            <td>Sample State</td> 
+                            <td>Sample Country</td> 
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+            </div>
+        </section>
+    </div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
