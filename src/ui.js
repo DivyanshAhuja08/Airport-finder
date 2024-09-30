@@ -47,7 +47,7 @@ class ui{
         },3000)
     }
     clearAlert(){
-        const currentAlert= document.querySelector('.invaild');
+        const currentAlert= document.querySelector('.invalid');
         if(currentAlert){
             currentAlert.remove();
         }
